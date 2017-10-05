@@ -1,0 +1,185 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.c-header
+	background-color: $bg-dark
+	min-height: 93px
+	a
+		line-height: 85px
+	button
+		float: right
+		background-color: transparent
+		background-image: url(/img/hamburger.svg)
+		border: 0
+		display: block
+		width: 50px
+		margin-top: 6%
+		outline: none
+		
+
+.c-registration
+	background-image: url(/img/bg-main.png)
+	background-repeat: no-repeat
+	background-position: 0 -92px
+	background-attachment: fixed
+	padding: 32px 0
+
+.registration__banner
+	padding: 50px 0
+	span
+		display: block
+		text-align: center
+	h1
+		font-size: 35px
+		color: $blue
+		text-align: center
+		font-weight: 500
+	p
+		font-size: 24px
+		color: #fff
+		text-align: center
+		font-weight: 300
+
+.registration__form
+	.form-container
+		background-color: #fff
+		max-width: 380px
+		padding: 0 28px
+		margin: 0 auto
+		form
+			div
+				max-width: 160px
+				display: inline-block
+				margin-top: 30px
+				input
+					max-width: 160px
+				p
+					margin: 0
+					color: #000
+					font-size: 15px
+					font-weight: 300
+			.check
+				max-width: 100%
+				width: 100%
+				padding-left: 30px
+				input
+					display: inline-block
+					width: 23px
+					height: 23px
+					background-color: transparent
+					border: 1px solid #374750
+					outline: none
+				p
+					font-size: 10px
+					display: inline-block
+			.form-submit
+				margin-top: 30px
+				margin-bottom: 30px
+				background-image: url(/img/button.png)
+				border: 0
+				outline: none
+				color: #fff
+				text-transform: uppercase
+				font-size: 20px
+				width: 100%
+				border-radius: 10px
+				padding: 10px 0
+	header
+		background-color: #e8e8e8
+		max-width: 380px
+		margin: 0 auto
+		p
+			color: $blue
+			font-size: 24px
+			text-align: center
+			margin: 0
+			span
+				color: #30373f
+				font-size: 15px
+
+.c-footer-info
+	background: $bg-dark
+	padding: 20px 0
+	p
+		font-size: 14px
+		color: #fff
+		margin: 10px 0
+		span
+			margin-right: 10px
+
+.col-md-2,
+.col-md-3
+	p
+		color: #bcbec0
+		font-size: 18px
+	ul
+		margin: 0
+		padding: 0
+		li
+			a
+				color: #939598
+				font-size: 13px
+				font-weight: 300
+
+.c-footer-descr
+	background-color: #292828
+	padding: 20px 0
+	p
+		font-size: 13px
+		font-weight: 300
+		color: #939598
+		text-align: center
+
+
+
+@import "media" // Всегда в конце
